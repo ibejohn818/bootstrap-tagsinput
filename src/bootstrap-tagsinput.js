@@ -486,7 +486,8 @@
          var textLength = $input.val().length,
             wordSpace = Math.ceil(textLength / 5),
             size = textLength + wordSpace + 3;
-         $input.attr('size', Math.max(this.inputSize, $input.val().length));
+         //$input.attr('size', Math.max(this.inputSize, $input.val().length));
+         $input.attr('size', size);
       }, self));
 
       // Remove icon clicked
